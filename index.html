@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Video Creator</title>
+</head>
+<body>
+    <p id="server-status"></p>
+    <div class="container" id="video-creator-container">
+        <h1>Video Creator</h1>
+        <p id="video-error-message" style="color: red;"></p>
+        <input id="title" placeholder="Title..." />
+        <input id="views" type="number" placeholder="Amount of views..." />
+        <input id="likes" type="number" placeholder="Amount of likes..." />
+        <button id="video-send-btn">Send</button>
+        <a href="videos.html">See videos</a>
+        <p id="video-success-message" style="color: green;"></p>
+    </div>
+    <script src="js/checkServerStatus.js" type="module"></script>
+    <script src="js/videoCreatorHandler.js" type="module"></script>
+</body>
+</html>
